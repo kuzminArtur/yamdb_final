@@ -61,5 +61,5 @@ make build
 ### Автор
 Студент Яндекс.Практикума Кузьмин Артур
 
+[![Actions Status](https://github.com/kuzminArtur/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)](https://github.com/kuzminArtur/yamdb_final/actions)
 
-https://github.com/kuzminArtur/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg
