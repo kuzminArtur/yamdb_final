@@ -60,3 +60,6 @@ make build
 ```
 ### Автор
 Студент Яндекс.Практикума Кузьмин Артур
+
+
+https://github.com/kuzminArtur/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg
