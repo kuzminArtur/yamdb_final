@@ -1,0 +1,9 @@
+.env
+.idea
+.git/
+.gitignore
+.dockerignore
+venv
+media/
+static/*
+sent_emails/*

@@ -4,6 +4,8 @@
 различных произведениях с их каталогизацией. Проект разворачивается в трех
 Docker-контейнерах.
 
+[![Actions Status](https://github.com/kuzminArtur/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)](https://github.com/kuzminArtur/yamdb_final/actions)
+
 ## Запуск проекта
 - Установить Docker согласно инструкции https://docs.docker.com/engine/install/
 - Установить Docker-compose согласно инструкции https://docs.docker.com/compose/install/
@@ -60,6 +62,3 @@ make build
 ```
 ### Автор
 Студент Яндекс.Практикума Кузьмин Артур
-
-[![Actions Status](https://github.com/kuzminArtur/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)](https://github.com/kuzminArtur/yamdb_final/actions)
-
