@@ -81,10 +81,10 @@ jobs:
          passphrase: ${{ secrets.PASSPHRASE }}
          script: |
            cd yamb/
-           docker-compose stop
+           docker-compose down
            docker-compose up -d
-           docker-compose exec web python manage.py migrate --noinput
-           docker-compose exec web python manage.py collectstatic --noinput
+           docker-compose exec -T web python manage.py migrate --noinput
+           docker-compose exec -T web python manage.py collectstatic --noinput
 
   send_message:
     runs-on: ubuntu-latest
