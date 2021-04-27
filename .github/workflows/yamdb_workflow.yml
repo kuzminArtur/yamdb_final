@@ -73,6 +73,7 @@ jobs:
          passphrase: ${{ secrets.PASSPHRASE }}
          script: |
            cd yamb/
+           sudo docker-compose migrate-to-labels -y
            docker-compose down
            docker-compose up -d --build
 
