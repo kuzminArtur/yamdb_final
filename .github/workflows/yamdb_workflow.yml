@@ -62,17 +62,17 @@ jobs:
          source: "docker-compose.yaml"
          target: "./yamb"
          
-      - name: executing remote ssh commands to deploy
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USER }}
-          key: ${{ secrets.SSH_KEY }}
-          passphrase: ${{ secrets.PASSPHRASE }}
-          script: |
-            cd yamb/
-            docker-compose down
-            docker-compose up -d --build
+     - name: executing remote ssh commands to deploy
+       uses: appleboy/ssh-action@master
+       with:
+         host: ${{ secrets.HOST }}
+         username: ${{ secrets.USER }}
+         key: ${{ secrets.SSH_KEY }}
+         passphrase: ${{ secrets.PASSPHRASE }}
+         script: |
+           cd yamb/
+           docker-compose down
+           docker-compose up -d --build
 
   send_message:
     runs-on: ubuntu-latest
