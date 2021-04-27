@@ -81,8 +81,8 @@ jobs:
          passphrase: ${{ secrets.PASSPHRASE }}
          script: |
            cd yamb/
-           docker-compose down
-           docker-compose up -d --build
+           docker-compose stop
+           docker-compose up -d 
 
   send_message:
     runs-on: ubuntu-latest
