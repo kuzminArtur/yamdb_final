@@ -86,6 +86,7 @@ jobs:
            docker-compose up -d
            docker-compose exec -T web python manage.py migrate --noinput
            docker-compose exec -T web python manage.py collectstatic --noinput
+           docker-compose exec -T web mv redoc.yaml static/
 
   send_message:
     runs-on: ubuntu-latest
